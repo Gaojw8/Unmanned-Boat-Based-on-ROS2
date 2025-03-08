@@ -60,21 +60,21 @@ pigpio能够在树莓派等嵌入式平台上产生PWM波以驱动无刷电机�
 之后，打开service文件，
 `sudo nano /etc/systemd/system/vncserver@.service`
 黏贴以下内容：
-`[Unit]
-Description=Start TightVNC server at startup
-After=syslog.target network.target
-[Service]
-Type=forking
-User=<username>
-PAMName=login
-PIDFile=/home/<username>/.vnc/%H:%i.pid
-ExecStartPre=-/usr/bin/vncserver -kill :%i > /dev/null 2>&1
-ExecStart=/usr/bin/vncserver -geometry 1920x1080 -depth 24 -dpi 96 :%i
-ExecStop=/usr/bin/vncserver -kill :%i
-[Install]
-WantedBy=multi-user.target`
+`[Unit]`  
+`Description=Start TightVNC server at startup`  
+`After=syslog.target network.target`  
+`[Service]`  
+`Type=forking`  
+`User=<username>`  
+`PAMName=login`  
+`PIDFile=/home/<username>/.vnc/%H:%i.pid`  
+`ExecStartPre=-/usr/bin/vncserver -kill :%i > /dev/null 2>&1`  
+`ExecStart=/usr/bin/vncserver -geometry 1920x1080 -depth 24 -dpi 96 :%i`  
+`ExecStop=/usr/bin/vncserver -kill :%i`  
+`[Install]`  
+`WantedBy=multi-user.target`
 再次授予权限：
-`sudo systemctl daemon-reload
-sudo systemctl enable vncserver@1.service
-sudo systemctl start vncserver@1.service`
+`sudo systemctl daemon-reload`  
+`sudo systemctl enable vncserver@1.service`  
+`sudo systemctl start vncserver@1.service`  
 至此，vnc配置完毕。
