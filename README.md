@@ -18,9 +18,9 @@
 
 2.安装ssh，连接putty  
 在命令行输入：  
-`sudo apt-get update  
-sudo apt-get install openssh-server  
-Ifconfig`
+`sudo apt-get update` 
+`sudo apt-get install openssh-server ` 
+`Ifconfig`
 
 3.安装pigpio库  
 pigpio能够在树莓派等嵌入式平台上产生PWM波以驱动无刷电机，直接pip会报错，因此采用以下方式：  
