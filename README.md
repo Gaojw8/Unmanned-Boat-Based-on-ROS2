@@ -60,7 +60,7 @@ pigpio能够在树莓派等嵌入式平台上产生PWM波以驱动无刷电机�
 `chmod +x ~/.vnc/xstartup`
 之后，打开service文件，
 `sudo nano /etc/systemd/system/vncserver@.service`
-黏贴以下内容：
+黏贴以下内容：  
 `[Unit]`  
 `Description=Start TightVNC server at startup`  
 `After=syslog.target network.target`  
