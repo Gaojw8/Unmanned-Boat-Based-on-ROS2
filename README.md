@@ -25,10 +25,10 @@
 3.安装pigpio库  
 pigpio能够在树莓派等嵌入式平台上产生PWM波以驱动无刷电机，直接pip会报错，因此采用以下方式：  
 在命令行输入：  
-`wget https://github.com/joan2937/pigpio/archive/master.zip #克隆项目  
-unzip master.zip  
-cd pigpio-master  
-make`  
+`wget https://github.com/joan2937/pigpio/archive/master.zip #克隆项目`  
+`unzip master.zip`  
+`cd pigpio-master`  
+`make`
 安装：  
 `sudo apt install python-setuptools python3-setuptools  
 sudo make install  
