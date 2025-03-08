@@ -30,31 +30,31 @@ pigpio能够在树莓派等嵌入式平台上产生PWM波以驱动无刷电机�
 `cd pigpio-master`  
 `make`
 安装：  
-`sudo apt install python-setuptools python3-setuptools  
-sudo make install  
-sudo pigpiod`  
+`sudo apt install python-setuptools python3-setuptools` 
+`sudo make install `
+`sudo pigpiod`  
 运行test,py测试PWM信号驱动电机：  
-`cd longwang_ws  
-cd test_1  
-cd test_1  
-python3 test.py `  
+`cd longwang_ws`  
+`cd test_1  `
+`cd test_1  `
+`python3 test.py `  
 若电机转动，则配置完成。
 
 4.配置VNC  
 为了在PC端进行树莓派可视化编程，需要配置VNC，首先在PC端安装VNC Viewer软件，  
 使用putty远程控制树莓派命令行，输入：  
-`sudo apt update  
-sudo apt upgrade  
-sudo apt install xfce4 xfce4-goodies tightvncserver`  
+`sudo apt update  `
+`sudo apt upgrade  `
+`sudo apt install xfce4 xfce4-goodies tightvncserver`  
 安装后，首次打开vnc连接：  
 `vncserver  
 vncserver -kill :1`  
 此时无法连接，打开配置文件：
 `nano ~/.vnc/xstartup`
 黏贴以下内容：
-`#!/bin/bash  
-xrdb $HOME/.Xresources  
-startxfce4`
+`#!/bin/bash ` 
+`xrdb $HOME/.Xresources  `
+`startxfce4`
 退出后在命令行输入：
 `chmod +x ~/.vnc/xstartup`
 之后，打开service文件，
