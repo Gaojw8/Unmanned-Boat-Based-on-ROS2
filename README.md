@@ -18,8 +18,8 @@
 
 2.安装ssh，连接putty  
 在命令行输入：  
-`sudo apt-get update` 
-`sudo apt-get install openssh-server ` 
+`sudo apt-get update`   
+`sudo apt-get install openssh-server `   
 `Ifconfig`
 
 3.安装pigpio库  
