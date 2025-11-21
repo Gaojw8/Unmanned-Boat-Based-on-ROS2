@@ -3,7 +3,7 @@
 
 一.主要功能  
 开发了基于ROS2与OpenCV的自动避障及目标追踪双体水翼海警船，通过双体水翼船的结构设计，实现了高速、稳定的目标；基于OpenCV实现目标追踪系统，基于ROS2实现雷达自动避障导航功能，为自主避碰和目标追踪提供依据。
-[1.png](https://github.com/Gaojw8/Unmanned-Boat-Based-on-ROS2/blob/main/1.png)
+![image](https://github.com/Gaojw8/Unmanned-Boat-Based-on-ROS2/blob/main/1.png)
 
 二.主要设备及系统  
 1.树莓派4B  
